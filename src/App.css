@@ -76,8 +76,9 @@ a {
   border-left: 3px solid white;
   border-top: 3px solid white;
   transform: rotate(45deg);
-  left: 11px;
-  top: 8px;
+  left: 50%;
+  margin-left: -11px;
+  top: 16.7%;
 }
 
 .house {
@@ -85,8 +86,9 @@ a {
   width: 19px;
   height: 16px;
   border: 3px solid white;
-  left: 13px;
-  top: 21px;
+  left: 50%;
+  margin-left: -9.5px;
+  top: 43.75%;
 }
 
 .logo-name {
