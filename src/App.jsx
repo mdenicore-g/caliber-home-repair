@@ -312,8 +312,8 @@ function App() {
                   <span>📞</span>
                   <div>
                     <small>PHONE</small>
-                    <a href="tel:2155550100">
-                      (215) 555-0100
+                    <a href="tel:2678278932">
+                      (267) 827-8932
                     </a>
                   </div>
                 </div>
