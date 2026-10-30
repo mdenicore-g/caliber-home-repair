@@ -98,7 +98,7 @@ function App() {
               </p>
 
               <h1>
-                Quality Home Repair.
+                <span className="hero-title-light">Quality Home Repair.</span>
                 <br />
                 <span>Done Right.</span>
               </h1>
