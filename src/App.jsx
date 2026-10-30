@@ -28,6 +28,17 @@ const services = [
   },
 ];
 
+const communities = [
+  "Doylestown",
+  "Newtown",
+  "Yardley",
+  "Warrington",
+  "Warminster",
+  "New Hope",
+  "Chalfont",
+  "Quakertown",
+];
+
 const benefits = [
   "Professional and dependable service",
   "Attention to detail",
@@ -77,6 +88,7 @@ function App() {
           <nav id="primary-navigation" aria-label="Main navigation" className={`nav ${menuOpen ? "nav-open" : ""}`}>
             <a href="#home" onClick={closeMenu}>Home</a>
             <a href="#services" onClick={closeMenu}>Services</a>
+            <a href="#communities" onClick={closeMenu}>Service Areas</a>
             <a href="#about" onClick={closeMenu}>About</a>
             <a href="#contact" onClick={closeMenu}>Contact</a>
             <a className="nav-cta" href="#contact" onClick={closeMenu}>
@@ -191,6 +203,40 @@ function App() {
               ))}
             </div>
 
+          </div>
+        </section>
+
+        {/* Communities Served */}
+        <section id="communities" className="communities section">
+          <div className="container">
+            <div className="section-heading">
+              <p className="section-label">OUR SERVICE AREA</p>
+              <h2>Quality Home Repair Throughout Bucks County, PA</h2>
+              <p>
+                Caliber Home Repair serves homeowners in communities throughout
+                Bucks County, providing dependable home repair and maintenance
+                support close to home.
+              </p>
+            </div>
+
+            <ul className="communities-grid" aria-label="Communities served">
+              {communities.map((community) => (
+                <li className="community-card" key={community}>
+                  <span className="community-pin" aria-hidden="true">⌖</span>
+                  <span>{community}</span>
+                </li>
+              ))}
+            </ul>
+
+            <p className="communities-note">
+              Don't see your town listed? Contact us to ask about service
+              availability in your area.
+            </p>
+            <div className="communities-action">
+              <a href="#contact" className="button button-dark">
+                Check Service Availability
+              </a>
+            </div>
           </div>
         </section>
 
@@ -443,6 +489,7 @@ function App() {
           <div className="footer-links">
             <a href="#home">Home</a>
             <a href="#services">Services</a>
+            <a href="#communities">Service Areas</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
           </div>

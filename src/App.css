@@ -369,6 +369,61 @@ a {
   font-weight: 700;
 }
 
+
+/* =========================
+   COMMUNITIES SERVED
+========================= */
+
+.communities {
+  background: #F2F5F8;
+}
+
+.communities .section-heading {
+  max-width: 780px;
+}
+
+.communities-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  list-style: none;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.community-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 76px;
+  padding: 16px;
+  background: #FFFFFF;
+  border: 1px solid #DCE3EA;
+  border-radius: 6px;
+  color: #194F8A;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(24, 64, 105, 0.05);
+}
+
+.community-pin {
+  color: #2F7FCB;
+  font-size: 20px;
+}
+
+.communities-note {
+  margin: 28px auto 0;
+  color: #526173;
+  text-align: center;
+  font-size: 15px;
+}
+
+.communities-action {
+  margin-top: 22px;
+  text-align: center;
+}
+
 /* =========================
    WHY
 ========================= */
@@ -676,6 +731,10 @@ a {
     grid-template-columns: 1fr 1fr;
   }
 
+  .communities-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .intro-grid,
   .why-grid,
   .contact-grid {
@@ -752,6 +811,17 @@ a {
 
   .services-grid {
     grid-template-columns: 1fr;
+  }
+
+  .communities-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .community-card {
+    min-height: 64px;
+    padding: 12px 8px;
+    font-size: 14px;
   }
 
   .benefits {
