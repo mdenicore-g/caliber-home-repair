@@ -65,13 +65,16 @@ function App() {
 
           <button
             className="menu-button"
+            type="button"
             onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Toggle navigation"
+            aria-label={menuOpen ? "Close navigation" : "Open navigation"}
+            aria-expanded={menuOpen}
+            aria-controls="primary-navigation"
           >
             ☰
           </button>
 
-          <nav className={`nav ${menuOpen ? "nav-open" : ""}`}>
+          <nav id="primary-navigation" aria-label="Main navigation" className={`nav ${menuOpen ? "nav-open" : ""}`}>
             <a href="#home" onClick={closeMenu}>Home</a>
             <a href="#services" onClick={closeMenu}>Services</a>
             <a href="#about" onClick={closeMenu}>About</a>
@@ -104,8 +107,8 @@ function App() {
               </h1>
 
               <p className="hero-description">
-                Professional home repair, maintenance, and inspection
-                services you can trust.
+                Dependable home repair, maintenance, and property review
+                services for homeowners throughout Bucks County, Pennsylvania.
               </p>
 
               <div className="hero-buttons">
@@ -140,13 +143,15 @@ function App() {
               <p>
                 Your home is one of your biggest investments. Caliber Home
                 Repair provides dependable maintenance, repairs, and home
-                services to help you protect that investment.
+                services for homeowners throughout Bucks County, Pennsylvania,
+                to help you protect that investment.
               </p>
 
               <p>
                 From small repairs and routine maintenance to pre-listing
                 reviews and larger projects, we approach every job with
-                professionalism, attention to detail, and care.
+                professionalism, attention to detail, and care. Explore our
+                services or contact us to discuss the work you have in mind.
               </p>
             </div>
 
