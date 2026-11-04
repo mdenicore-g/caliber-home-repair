@@ -53,5 +53,6 @@ export const CONTACT = {
   phoneDisplay: '(267) 827-8932',
   phoneHref: 'tel:+12678278932',
   email: 'info.caliberhomerepair@gmail.com',
+  emailSubject: 'repair request',
   area: 'Bucks County, Pennsylvania',
 }

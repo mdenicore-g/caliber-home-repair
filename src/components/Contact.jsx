@@ -23,7 +23,7 @@ export default function Contact() {
             </a>
           </li>
           <li>
-            <a className="contact-card" href={`mailto:${CONTACT.email}`}>
+            <a className="contact-card" href={`mailto:${CONTACT.email}?subject=${encodeURIComponent(CONTACT.emailSubject)}`}>
               <span className="contact-icon" aria-hidden="true">✉️</span>
               <small>EMAIL</small>
               <span className="contact-value">
